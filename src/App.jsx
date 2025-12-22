@@ -1,27 +1,17 @@
 
 import './App.css'
+import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 
 function App() {
 
   return (
     <>
-    <header className="App-header">
-      <img src="src\assets\icons_assets\Logo .svg" className="App-logo" alt="logo" />
-      
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <Header/>
     <main>
       <HomePage />
     </main>
-    <footer>
-      <p>© 2024 My React Router App</p>
-    </footer>
+    <Footer/>
     </>
   )
 }

@@ -1,22 +1,100 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Fonts */
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-heading: "Markazi Text", system-ui, sans-serif;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Font sizes */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Line heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+
+  /* Base colors */
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+
+  /* Brand colors Primary*/
+  --color-primary: #495e57;
+  --color-primary-second: #f4ce14;
+
+  /* Brand colors Secondary */
+  --color-secondary-first: #ee9972;
+  --color-secondary-second: #fbdabb;
+
+  /*Highlight Colors*/
+  --color-highlight: #edefee;
+  --color-highlight-second: #333333;
+
+  /* Accent */
+  --color-accent: #f59e0b;
+
+  /* UI */
+  --color-muted: #9ca3af;
+
+  --color-bg: #121212;
+  --color-text: #ffffff;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("src/assets/icons_assets/restaurant.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  grid-area: header;
+  opacity: 0.75;
+  background-color: var(--color-bg);
+  width: 100%;
+  font: var(--font-heading);
+}
+main {
+  grid-area: main;
+  color: aliceblue;
+  width: 100%;
+}
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #213547;
+  width: 100%;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --color-bg: #ffffff;
+    --color-text: #213547;
   }
   a:hover {
     color: #747bff;
