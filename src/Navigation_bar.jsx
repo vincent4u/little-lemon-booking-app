@@ -1,0 +1,16 @@
+function Navigation_bar() {
+    return (
+        <>
+         <img src="src\assets\icons_assets\Logo .svg" className="App-logo" alt="logo" />
+      
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+        </>
+    )
+}
+export default Navigation_bar
