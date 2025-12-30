@@ -4,67 +4,60 @@ A modern, accessible table reservation application built with React, showcasing 
 
 🔍 Project Summary
 This application allows users to reserve a table by selecting:
-
-Date
-Available time
-Number of guests
-Occasion
+-Date
+-Available time
+-Number of guests
+-Occasion
 
 It was developed as part of the Meta Front-End Developer Professional Certificate (Coursera) and enhanced to reflect real-world, production-level standards.
 
 🚀 Live Features
-
-📅 Dynamic date-based available time slots
-⏰ Time selection driven by application state (Reducer pattern)
-🧍 Guest count and occasion selection
-✅ HTML5 and React-based form validation
-🔒 Disabled submission when form is invalid
-♿ Accessibility-friendly form markup (labels, semantic HTML)
-🧪 Comprehensive unit testing with Vitest & React Testing Library
-🎨 Modern, responsive, and professional UI design
+-📅 Dynamic date-based available time slots
+-⏰ Time selection driven by application state (Reducer pattern)
+-🧍 Guest count and occasion selection
+-✅ HTML5 and React-based form validation
+-🔒 Disabled submission when form is invalid
+-♿ Accessibility-friendly form markup (labels, semantic HTML)
+-🧪 Comprehensive unit testing with Vitest & React Testing Library
+-🎨 Modern, responsive, and professional UI design
 
 🛠 Tech Stack
-
-React (Hooks, Functional Components)
-useReducer and useState for state management
-React Router for navigation
-CSS (modern, responsive UI) for styling
-Vitest & React Testing Library for unit testing
-HTML5 + React validation
-Accessibility-first form design (WCAG-aligned form semantics)
+-React (Hooks, Functional Components)
+-useReducer and useState for state management
+-React Router for navigation
+-CSS (modern, responsive UI) for styling
+-Vitest & React Testing Library for unit testing
+-HTML5 + React validation
+-Accessibility-first form design (WCAG-aligned form semantics)
 
 ✨ Key Features
-
-Dynamic available times based on selected date
-Centralized state management with reducer pattern
-HTML5 & client-side form validation
-Disabled submit button when form is invalid
-Accessible, semantic form markup (WCAG-friendly)
-Modern, responsive form UI
-Comprehensive unit test coverage
+-Dynamic available times based on selected date
+-Centralized state management with reducer pattern
+-HTML5 & client-side form validation
+-Disabled submit button when form is invalid
+-Accessible, semantic form markup (WCAG-friendly)
+-Modern, responsive form UI
+-Comprehensive unit test coverage
 
 🧪 Testing
-
 The project includes unit tests for:
 
-Reducer logic
-HTML validation attributes
-Client-side validation (valid & invalid states)
-Form submission behavior
+-Reducer logic
+-HTML validation attributes
+-Client-side validation (valid & invalid states)
+-Form submission behavior
 
 Run tests with:
-
-npm test
+-npm test
 
 ▶️ Running the Project
-git clone https://github.com/your-username/little-lemon-reservation.git
+-git clone https://github.com/your-username/little-lemon-reservation.git
 cd little-lemon-reservation
-npm install
-npm run dev
+-npm install
+-npm run dev
 
 
 App runs at:
-
 http://localhost:5173
 
 📂 Project Highlights 
@@ -77,7 +70,6 @@ http://localhost:5173
 ✔ Production-quality documentation
 
 👤 Author
-
 Vincent Nnamdi Ugwah
 MSc Artificial Intelligence
 Front-End Engineer
