@@ -18,11 +18,11 @@ You may also see any lint errors in the console.
 
 
 
-🍋 Little Lemon Table Reservation App
+#🍋 Little Lemon Table Reservation App
 
 A modern, accessible table reservation application built with React, showcasing professional front-end engineering practices including state management, form validation, accessibility, and unit testing.
 
-🔍 Project Summary
+#🔍 Project Summary
 This application allows users to reserve a table by selecting:
 -Date
 -Available time
@@ -31,7 +31,7 @@ This application allows users to reserve a table by selecting:
 
 It was developed as part of the Meta Front-End Developer Professional Certificate (Coursera) and enhanced to reflect real-world, production-level standards.
 
-🚀 Live Features
+#🚀 Live Features
 -📅 Dynamic date-based available time slots
 -⏰ Time selection driven by application state (Reducer pattern)
 -🧍 Guest count and occasion selection
@@ -41,7 +41,7 @@ It was developed as part of the Meta Front-End Developer Professional Certificat
 -🧪 Comprehensive unit testing with Vitest & React Testing Library
 -🎨 Modern, responsive, and professional UI design
 
-🛠 Tech Stack
+#🛠 Tech Stack
 -React (Hooks, Functional Components)
 -useReducer and useState for state management
 -React Router for navigation
@@ -50,7 +50,7 @@ It was developed as part of the Meta Front-End Developer Professional Certificat
 -HTML5 + React validation
 -Accessibility-first form design (WCAG-aligned form semantics)
 
-✨ Key Features
+#✨ Key Features
 -Dynamic available times based on selected date
 -Centralized state management with reducer pattern
 -HTML5 & client-side form validation
@@ -59,7 +59,7 @@ It was developed as part of the Meta Front-End Developer Professional Certificat
 -Modern, responsive form UI
 -Comprehensive unit test coverage
 
-🧪 Testing
+#🧪 Testing
 The project includes unit tests for:
 
 -Reducer logic
@@ -67,20 +67,20 @@ The project includes unit tests for:
 -Client-side validation (valid & invalid states)
 -Form submission behavior
 
-Run tests with:
--npm test
+#Run tests with:
+## `npm test`
 
 ▶️ Running the Project
 -git clone https://github.com/your-username/little-lemon-reservation.git
 cd little-lemon-reservation
--npm install
--npm run dev
+## `npm install`
+## `npm run dev`
 
 
-App runs at:
-http://localhost:5173
+#App runs at:
+[http://localhost:5173]
 
-📂 Project Highlights 
+#📂 Project Highlights 
 
 ✔ Clean component architecture
 ✔ Predictable state management
@@ -89,8 +89,8 @@ http://localhost:5173
 ✔ Test-driven mindset
 ✔ Production-quality documentation
 
-👤 Author
-Vincent Nnamdi Ugwah
+#👤 Author
+## `Vincent Nnamdi Ugwah`
 MSc Artificial Intelligence
 Front-End Engineer
 
