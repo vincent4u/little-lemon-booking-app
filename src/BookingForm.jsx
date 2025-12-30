@@ -17,10 +17,14 @@ function BookingForm({ availableTimes, selectedTime, dispatch, submitForm }) {
     setIsValid(formValid);
   }, [date, selectedTime, guest, occasion]);
 
+     // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!isValid) return; // double-check
 
+
+      
+    // Prepare data object to send to API
     const formData = {
       date,
       time: selectedTime,
@@ -28,6 +32,7 @@ function BookingForm({ availableTimes, selectedTime, dispatch, submitForm }) {
       occasion
     };
 
+      // Call submit function passed from BookingPage
     submitForm(formData);
   };
 
@@ -38,6 +43,7 @@ function BookingForm({ availableTimes, selectedTime, dispatch, submitForm }) {
 
       <form className="booking-form" onSubmit={handleSubmit} noValidate>
         {/* Date */}
+        <div>
         <label htmlFor="res-date">Choose date</label>
         <input
           id="res-date"
@@ -50,8 +56,10 @@ function BookingForm({ availableTimes, selectedTime, dispatch, submitForm }) {
             dispatch({ type: "UPDATE_DATE", payload: e.target.value });
           }}
         />
+        </div>
 
         {/* Time */}
+        <div>
         <label htmlFor="res-time">Choose time</label>
         <select
           id="res-time"
@@ -69,8 +77,10 @@ function BookingForm({ availableTimes, selectedTime, dispatch, submitForm }) {
             </option>
           ))}
         </select>
+        </div>
 
         {/* Guests */}
+        <div>
         <label htmlFor="guests">Number of guests</label>
         <input
           id="guests"
@@ -82,8 +92,10 @@ function BookingForm({ availableTimes, selectedTime, dispatch, submitForm }) {
           aria-label="On Click"
           onChange={(e) => setGuest(Number(e.target.value))}
         />
+        </div>
 
         {/* Occasion */}
+        <div>
         <label htmlFor="occasion">Occasion</label>
         <select
           id="occasion"
@@ -95,12 +107,13 @@ function BookingForm({ availableTimes, selectedTime, dispatch, submitForm }) {
           <option value="Birthday">Birthday</option>
           <option value="Anniversary">Anniversary</option>
         </select>
+        </div>
 
         {/* Submit button disabled if form is invalid */}
         <input
           type="submit"
           value="Make Your reservation"
-          disabled={!isValid}
+          disabled={!isValid}               // React validation
           aria-label="On Click"
         />
       </form>
