@@ -5,7 +5,7 @@ This project was bootstrapped with [Create vite@latest]
 ## Available Scripts
 
 In the project directory, you can run:
-
+### `npm run install`
 ### `npm run dev`
 
 Runs the app in the development mode.\
